@@ -1,0 +1,81 @@
+{
+    "layer": "bottom",
+    "position": "top",
+    "modules-left": ["custom/os", "hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["tray", "backlight", "pulseaudio", "cpu", "memory", "network", "battery", "clock"],
+
+    "custom/os": {
+        "format": "Saturn 󱄅",
+        "on-click": "kitty"
+    },
+    "hyprland/window": {
+        "max-length": 25,
+        "format": "{class}",
+        "rewrite": {
+            "org.kde.kate": "kate ",
+            "vesktop": "discord ",
+            "firefox": "firefox 󰈹",
+            "kitty": "kitty ",
+	    "Alacritty": "alacritty ",
+	    "obsidian": "obsidian ",
+	    "signal": "signal 󰭻",
+ 	    "Signal": "signal 󰭻",
+	    "zed": "zed ",
+	    "Zed": "zed ",
+	    "com.obsproject.Studio": "obs studio 󱣴",
+        },
+        "default-icon": "󰣆",
+        "separate-outputs": true
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        "format": "{:%a, %d. %b  %H:%M}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "1": "I",
+            "2": "II",
+            "3": "III",
+            "4": "IV",
+            "5": "V",
+            "6": "VI",
+            "7": "VII",
+            "8": "VIII",
+            "9": "IX",
+            "10": "X"
+        },
+        "sort-by-number": true,
+    },
+    "tray": {
+        "format": "{icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": "󰖨",
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-icons": ["󰝟", "", "", "", "", ""],
+        "format-muted": "{volume}% 󰝟"
+    },
+    "cpu": {
+        "format": "{usage}% {icon}",
+        "format-icons": ""
+    },
+    "memory": {
+        "format": "{}% {icon}",
+        "format-icons": ""
+    },
+    "network": {
+        "format": "{icon}",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+    }
+}

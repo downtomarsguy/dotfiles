@@ -1,0 +1,104 @@
+@import url("file:///home/saturn/.cache/wal/colors-waybar.css");
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "CodeNewRoman Nerd Font Propo";
+    font-size: 13px;
+    font-weight: bold;
+    box-shadow: none;
+    text-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+#waybar {
+    margin: 0 9px 0 5px;
+    background: transparent;
+}
+
+#mode,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#backlight,
+#clock,
+#tray,
+#window,
+#custom-os {
+    background: alpha(@color0, 0.5);
+    border: 2px solid alpha(@color7, 0.67);
+    border-radius: 4px;
+    color: alpha(@foreground, 0.6);
+    transition:
+        color 0.2s ease,
+        box-shadow 0.3s,
+        text-shadow 0.3s;
+    padding: 5px 10px;
+    margin: 5px 5px 0 0;
+}
+
+#mode:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#pulseaudio:hover,
+#backlight:hover,
+#clock:hover,
+#tray:hover,
+#window:hover,
+#custom-os:hover {
+    color: alpha(@foreground, 0.9);
+}
+
+#clock {
+    margin: 5px 9px 0 5px;
+    min-width: 140px;
+}
+
+#tray {
+    padding: 5px 8px;
+}
+
+#window {
+    margin: 5px 0 0 0;
+    color: alpha(@foreground, 0.9);
+}
+
+#custom-os {
+    color: alpha(@foreground, 0.9);
+    margin-left: 7px;
+}
+
+#workspaces {
+    margin: 0;
+}
+
+#workspaces button {
+    background: alpha(@color0, 0.5);
+    border: 2px solid alpha(@color7, 0.4);
+    border-radius: 4px;
+    color: alpha(@foreground, 0.6);
+    font-weight: bold;
+    margin: 5px 0 0 4px;
+    padding: 0 6px;
+    opacity: 0.9;
+    transition:
+        color 0.2s,
+        border-color 0.2s,
+        box-shadow 0.3s,
+        text-shadow 0.3s;
+}
+
+#workspaces button:hover {
+    color: alpha(@foreground, 0.9);
+}
+
+#workspaces button.visible {
+    color: alpha(@foreground, 1);
+    border-color: alpha(@color7, 0.67);
+    opacity: 1;
+}
