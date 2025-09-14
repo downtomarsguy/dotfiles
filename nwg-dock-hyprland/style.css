@@ -1,0 +1,51 @@
+@import url("file:///home/saturn/.cache/wal/colors-waybar.css");
+
+window {
+    /* background: #36364f; */
+    background: alpha(@color0, 1);
+    border: 2px solid alpha(@color7, 0.67);
+    border-radius: 4px;
+    color: alpha(@foreground, 0.6);
+    transition:
+        color 0.2s ease,
+        box-shadow 0.3s,
+        text-shadow 0.3s;
+    padding: 10px 0px;
+    margin: 5px 5px 0 0;
+}
+
+#box {
+    /* Define attributes of the box surrounding icons here */
+    padding: 0px 2px 0px 2px;
+}
+
+#active {
+    /* This is to underline the button representing the currently active window */
+    border-bottom: solid 1px;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+button,
+image {
+    background: none;
+    border-style: none;
+    box-shadow: none;
+    color: #999;
+}
+
+button {
+    padding: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+    color: #eee;
+    font-size: 12px;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 2px;
+}
+
+button:focus {
+    box-shadow: none;
+}
