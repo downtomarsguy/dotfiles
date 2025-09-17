@@ -1,0 +1,26 @@
+(deflisten notifs :initial ""
+  `python ~/.config/eww/main.py`)
+
+(defwindow notifications
+           :monitor 0
+           :geometry (geometry :x "8px"
+                               :y "8px"
+                               :anchor "top right")
+           :stacking "overlay"
+           (literal :content notifs))
+
+(defwindow greeter
+    :monitor 0
+    :stacking "fg"
+    :windowtype "dock"
+    :wm-ignore true
+    :geometry (geometry
+                :width "20%"
+                :height "20%"
+                :anchor "center"
+        )
+    (box :orientation "vertical" :class "bx"
+        (button :onclick "~/World/Line/thematics/target/release/thematics ~/World/Profile/Wallpapers/10.jpg")
+        (label :text "Hello, World!")
+    )
+)

@@ -1,0 +1,17 @@
+@import url("file:///home/saturn/.cache/wal/colors-waybar.css");
+
+.notifications {
+    min-height: 0px;
+    background-color: transparent;
+}
+
+.notif {
+    background: rgba(16, 16, 24, 0.7);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #c5dee4;
+}
+
+.notif image {
+    padding-right: 10px;
+}
